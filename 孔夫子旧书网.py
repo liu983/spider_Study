@@ -24,5 +24,7 @@ publicKey = "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAMiU6MWuUemPQkPAZSfYUBD6qfgQfM/jY3O
 url = 'https://search.kongfz.com/product_result/?key=9787115429674&status=0&_stpmt=eyJzZWFyY2hfdHlwZSI6ImFjdGl2ZSJ9&pagenum=2&ajaxdata=1&type=1&_=1690850973637'
 resp = requests.get(url, headers=headers, params=params)
 print(resp.status_code)
-
+s = resp.text
 print(resp.text)
+# 5415
+print('update_laster')
